@@ -1,10 +1,4 @@
-function clickMale(){
-  document.calculator.display.value+=1;
- }
- function clickFemale(){
-  document.calculator.display.value+=1;
- }
- var months=["january", "february", "march", "april", "may", "june", "july", "august", "september", "november", "december"];
+ var month=["january", "february", "march", "april", "may", "june", "july", "august", "september", "november", "december"];
 
  // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {

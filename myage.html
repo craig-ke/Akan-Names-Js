@@ -3,6 +3,7 @@
        <head>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet" type="text/css" >
 
         <title>MyAge</title>
         
@@ -28,46 +29,24 @@
         </nav>
 
         <form class="needs-validation" novalidate>
-          <div class="form-row">
+         <div class="author">
+          <div class="form-column">
             <div class="col-md-6 mb-3">
-              <label for="validationCustom01">First name</label>
-              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <label for="validationCustom01">Name</label>
+              <input type="text" class="form-control" id="validationCustom01" value="" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
+          <div class="form-column">
             <div class="col-md-6 mb-3">
-              <label for="validationCustom02">Last name</label>
-              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <label for="validationCustom01">Birth Details</label>
+              <input type="number" class="form-control" id="dob" value="" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="validationCustom01">Date of birth</label>
-              <input type="number" class="form-control" id="validationCustom01" value="00" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="validationCustom02">Month of birth</label>
-              <input type="number" class="form-control" id="validationCustom02" value="00" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="validationCustom01">Year of birth</label>
-              <input type="text" class="form-control" id="validationCustom01" value="0000" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
+           <div class="form-column">
             <div class="col-md-3 mb-3">
               <label for="validationCustom04">Gender</label>
               <select class="custom-select" id="validationCustom04" required>
@@ -79,12 +58,12 @@
               </div>
             </div>
           </div>
-            </div>
-          </div>
-      
+          
+        <div class="form-column">
           <button class="btn btn-primary" type="submit">Submit form</button>
 
           <input type="text" name="display" class="form-control bg-dark text-white readonly">
+        </div>
 
         </form>
 
