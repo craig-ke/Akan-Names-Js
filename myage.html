@@ -32,26 +32,33 @@
          <div class="author">
           <div class="form-column">
             <div class="col-md-6 mb-3">
-              <label for="validationCustom01">Name</label>
-              <input type="text" class="form-control" id="validationCustom01" value="" required>
+              <label for="ftName">First Name</label>
+              <input type="text" class="form-control" id="ftName" value="" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
-          <div class="form-column">
             <div class="col-md-6 mb-3">
-              <label for="validationCustom01">Birth Details</label>
-              <input type="number" class="form-control" id="dob" value="" required>
+              <label for="ltName">Last Name</label>
+              <input type="text" class="form-control" id="lName" value="" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
+            </div>
+            <div class="form-column">
+              <div class="col-md-6 mb-3">
+                <label for="bDetails">Birth Details</label>
+                <input type="date" class="form-control" id="dd" id="mm" id="yyyy" id="day" value="" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
             </div>
            <div class="form-column">
             <div class="col-md-3 mb-3">
-              <label for="validationCustom04">Gender</label>
-              <select class="custom-select" id="validationCustom04" required>
-                <option >Male</option>
-                <option>Female</option>
+              <label for="gender">Gender</label>
+              <select class="custom-select" id="gender" required>
+                <option value="m">Male</option>
+                <option value="f">Female</option>
               </select>
               <div class="invalid-feedback">
                 Please select a valid state.
@@ -61,7 +68,8 @@
           
         <div class="form-column">
           <button class="btn btn-primary" type="submit">Submit form</button>
-
+        </div>
+        <div class="form-column" > 
           <input type="text" name="display" class="form-control bg-dark text-white readonly">
         </div>
 

@@ -1,4 +1,15 @@
- var month=["january", "february", "march", "april", "may", "june", "july", "august", "september", "november", "december"];
+var getMonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById("mm").innerHTML = mm [d.getMonth()+1];
+if ( form.checkValidity( '<o','>12' ) === false)
+
+var getDay = new Date();
+document.getElementById("dd").innerHTML = d.getDay();
+
+var getYear = new Year();
+document.getElementById("yyyy").innerHTML =[d.getYear()];
+
+var getDay =new Day();
+document.getElementById("day").innerHTML =[d.getDay]
 
  // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
@@ -18,3 +29,4 @@
     });
   }, false);
 })();
+function 
