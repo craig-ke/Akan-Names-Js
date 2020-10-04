@@ -1,15 +1,16 @@
 # JavaScript-1
-## Craig Lawrence Olonyi}**
+## Craig Lawrence Olonyi
 ## Description
 *This is a detailed description of My application, including m purpose and usage.
 ## Setup/Installation Requirements
 * This is a great place to be.
 * Run today and walk tomorrow.
 ## Known Bugs
-* There are some issues which had not been solved yet but coming soon, shall be solved.
+* There are some issues which had not been solved yet but coming soon,   shall be solved.
 ## Technologies Used
 * HTML
 * CSS
+* JavaScript
 ## Support and contact details
 * CONTACTS:+254712242490; lawrence.olonyi.67@gmail.com .
 ### License
