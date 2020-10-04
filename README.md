@@ -14,7 +14,7 @@
 * CONTACTS:+254712242490; lawrence.olonyi.67@gmail.com .
 ### License
 * Copyright (c) [2020] [Crag Lawrence Olonyi]
-* Permission granted, free of charge, to any person obtaining a copy
+* Anyone accessing this file is  granted permision, free of charge, to any person obtaining a copy
   of this site and associated documentation files , to deal
   in the Software without restriction, including without limitation the rights
   to use, copy, modify, merge, publish, distribute and/or sell
