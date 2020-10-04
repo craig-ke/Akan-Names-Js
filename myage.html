@@ -27,34 +27,42 @@
               <li class="nav-item dropdown"></li>
           </div>
         </nav>
-        
+
         <form >
-            <div class="form-group">
-                <div class="form-check">
-                  <div class="form-group col-md-6"></div>
-                    <label for="year">year of Birth</label>
+          <div class="form-group">
+             <div class="form-group">
+               <div class="col-3">
+                    <label for="year">Year of Birth</label>
                     <input type="number" class="form-control" placeholder="Year" id="year">
-                    </div>
                 </div>
-                <div class="form-check">
+              </div>
+              <div class="form-group">
+                <div class="col-3">
                     <label for="Month">Birth Month</label>
                     <input type="number" class="form-control" placeholder="Month" id="month">
                 </div>
-                <div class="form-check">
+              </div>
+              <div class="form-group">
+                  <div class="col-3">
                     <label for="Day">Birth Day</label>
                     <input type="number" class="form-control" placeholder="Day" id="day">
                 </div>
+              </div>
+                
                 <div class="radio">
+                  <div class="col-3">
                     <label class="gender">
                         <input class="radio" type="radio" name="gender" id="male">Male
                         <input class="radio" type="radio" name="gender" id="female">Female
                     </label>
+                  </div>
                 </div>
+
                 <button type="button" class="btn btn-primary" onclick="onClick()">Submit</button>
                 <button type="button" class="btn btn-primary" onclick="reset">Reset</button>
-              </div>
-            </div>
-        </form>
+            </form>
+          </div>
+        
       </body>
       <script src="javascript/index.js"></script>
        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
