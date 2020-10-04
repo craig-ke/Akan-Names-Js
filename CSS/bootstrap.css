@@ -3183,6 +3183,18 @@ input[type="button"].btn-block {
 .dropdown-toggle {
   white-space: nowrap;
 }
+.background{
+  display: inline-block;
+  width: 28%;
+  margin: 3%;
+  text-align:left;
+  box-shadow: 0 0 14px 1px rgb(13, 213, 180);
+  background-color: rgb(239, 245, 247);
+  color: black;
+  padding: 5px;
+  width: 90%;
+  margin-right: 2%;
+  height: 130%;
 
 .dropdown-toggle::after {
   display: inline-block;
