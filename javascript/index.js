@@ -29,4 +29,3 @@ document.getElementById("day").innerHTML =[d.getDay]
     });
   }, false);
 })();
-function 
