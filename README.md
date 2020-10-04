@@ -1,4 +1,4 @@
-# JavaScript-1
+# JavaScript-1 Akan Application
 ## Craig Lawrence Olonyi
 ## Description
 *This is a detailed description of My application, including m purpose and usage.
@@ -11,6 +11,9 @@
 * HTML
 * CSS
 * JavaScript
+* Bootstrap
+## Known Bugs
+No bugs
 ## Support and contact details
 * CONTACTS:+254712242490; lawrence.olonyi.67@gmail.com .
 ### License
@@ -23,6 +26,7 @@
   furnished to do so, subject to the following conditions:
   The above copyright notice and this permission notice shall be included in all
   copies or substantial portions of the Software.
+
   THE SOFTWARE IS PROVIDED , WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE

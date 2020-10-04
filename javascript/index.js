@@ -1,94 +1,52 @@
-function main() {
-	var Day= document.getElementById("day-of-birth").value;
-	var Month = document.getElementById("month-of-birth").value;
-	var Year = document.getElementById("year-of-birth").value;
-
-
-
-	alert(dayOfTheWeek);
-	let dayOfTheWeek=["Sunday","Monday", "Tuesday", "Wednesday","Thursday", "Friday","Saturday"]
-	let maleAkanNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-	let femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-
-
-	if(document.getElementById('male').checked) {
-		var gender = 'male';
-	} else {
-		var gender = 'female';
-	}
-	 alert(gender);
-
-	if(day < 1 || day > 31) {
-		alert("You have entered an invalid date!");
-	}
-	else if(month < 1 || month > 13) {
-		alert("You have entered an invalid month!")
-	}
-	else if(year.length!=4) {
-		alert("Invalid Year")
-	}
-	else if(gender === 'male' , dayOfTheWeek === 0) {
-		alert("Your Akan name is " + maleAkanNames[0]);
-	}
-	else if(gender === 'male' , dayOfTheWeek === 1) {
-		alert("Your Akan name is " + maleAkanNames[1]);
-	}
-	else if(gender === 'male' , dayOfTheWeek === 2) {
-		alert("Your Akan name is " + maleAkanNames[2]);
-	}
-	else if(gender === 'male' , dayOfTheWeek === 3) {
-		alert("Your Akan name is " + maleAkanNames[3]);
-	}
-	else if(gender === 'male' , dayOfTheWeek === 4) {
-		alert("Your Akan name is " + maleAkanNames[4]);
-	}
-	else if(gender === 'male' , dayOfTheWeek === 5) {
-		alert("Your Akan name is " + maleAkanNames[5]);
-	}
-	else if(gender === 'male' , dayOfTheWeek === 6) {
-		alert("Your Akan name is " + maleAkanNames[6]);
-	}
-	else if(gender === 'female' , dayOfTheWeek === 0) {
-		alert("Your Akan name is " + femaleAkanNames[0]);
-	}
-	else if(gender === 'female' , dayOfTheWeek === 1) {
-		alert("Your Akan name is " + femaleAkanNames[1]);
-	}
-	else if(gender === 'female' , dayOfTheWeek === 2) {
-		alert("Your Akan name is " + femaleAkanNames[2]);
-	}
-	else if(gender === 'female' ,  dayOfTheWeek === 3) {
-		alert("Your Akan name is " + femaleAkanNames[3]);
-	}
-	else if(gender === 'female' , dayOfTheWeek === 4) {
-		alert("Your Akan name is " + femaleAkanNames[4]);
-	}
-	else if(gender === 'female' , dayOfTheWeek === 5) {
-		alert("Your Akan name is " + femaleAkanNames[5]);
-	}
-	else if(gender === 'female' , dayOfTheWeek === 6) {
-		alert("Your Akan name is " + femaleAkanNames[6]);
-	}
-	else {
-		alert("Error processing your akan name!")
-	}
-	
+function day (cc,yy,mm,dd){
+	return ((((cc/19)+1*cc-1)+((5*yy/4)) + ((26*(mm+1)/10)) + dd)%7)+1
 }
+function onClick(){
+	let year = document.getElementById("year").value;
+	let Month = document.getElementById("month").value;
+	let day = document.getElementById("day").value;
+	let maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+	let femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+	let craig = new Date();
+	craig.setDate(parseInt(day));
+	craig.setMonth(parseInt(Month)-1);
+	craig.setFullYear(parseInt(year));
+	var p = craig.getDay();
 
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    
-    var forms = document.getElementsByClassName('needs-validation');
-    
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
+	if(p===0){
+			alert("Sunday");
+
+	}else if(p===1){
+			alert("Monday");
+
+	}else if(p===2){
+			alert("Tuesday");
+
+	}else if(p===3){
+			alert("Wednesday");
+
+	}else if(p===4){
+			alert("Thursday");
+
+	}else if(p===5){
+			alert("Friday");
+
+	}else if(p===6){
+			alert("Saturday");
+	}
+	if(year==""<1950 || year >2056){
+			alert("insert a valid year");
+
+	}else if(Month=="" <1 ||Month >12){
+			alert("Enter a valid month");
+
+	}else if(day=="" <1 ||day >31){
+			alert("Enter a valid month");
+
+	}else if(document.getElementById("male").checked==true && document.getElementById("female").checked==false){
+			alert("Your Akan name is " + maleName[p]);
+
+	}else if(document.getElementById("male").checked==false && document.getElementById("female").checked==true){
+			alert("Your Akan name is " + femaleName[p]);
+	}
+}

@@ -2,20 +2,20 @@
 <html lang="en">
        <head>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet" type="text/css" >
-
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link href="styles.css" rel="stylesheet" type="text/css">
         <title>MyAkanName</title>
         
       </head>
 
       <body>
+
         <nav class="navbar navbar-dark bg-primary">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <buton class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             <a class="navbar-brand" href="#">Akan Names</a>
           </button>
-
+           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
@@ -28,61 +28,40 @@
           </div>
         </nav>
 
-        <form class="needs-validation" novalidate>
-         <div class="author">
-          <div class="form-column">
-            <div class="col-md-6 mb-3">
-              <label for="day-of-birth">Day</label>
-              <input type="number" class="form-control" id="day-of-birth" placeholder="Enter day e.g 15" min="1" max="31">
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="month-of-birth">Month</label>
-              <input type="number" class="form-control" id="month-of-birth" placeholder="Enter month e.g 12" min="1" max="12">
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            
-            <div class="form-column">
-              <div class="col-md-6 mb-3">
-                <label for="year-of-birth">Year</label>
-                <input type="number" class="form-control" id="year-of-birth" placeholder="Enter year e.g 1990" min="1960">
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-            </div>
-           <div class="form-column">
-            <div class="col-md-3 mb-3">
-              <label for="gender">Gender</label>
-              <select class="custom-select" id="gender" required>
-                <option value="m">Male</option>
-                <option value="f">Female</option>
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid state.
-              </div>
-            </div>
-          </div>
-          
-        <div class="form-column">
-          <input type="submit" onclick="main()" value="Submit" class="btn btn-primary">
-        </div>
         
-        <div class="answerArea" > 
-          <input type="" name="display" class="form-control bg-light text-dark "readonly>
-        </div>
-
-        </form>
-
-        </div>
-
-    <script src="javascript/index.js"> </script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+          <div class="conainer">
+            <form name="myForm">
+                <div class="form-group">
+                    <label for="year">year of Birth</label>
+                    <input type="number" class="form-control" placeholder="Year" id="year">
+                </div>
+                <div class="form-group">
+                    <label for="Month">Birth Month</label>
+                    <input type="number" class="form-control" placeholder="Month" id="month">
+                </div>
+                <div class="form-group">
+                    <label for="Day">Birth Day</label>
+                    <input type="number" class="form-control" placeholder="Day" id="day">
+                </div>
+                <div class="radio">
+                    <label class="gender">
+                        <input class="radio" type="radio" name="gender" id="male">Male
+                        <input class="radio" type="radio" name="gender" id="female">Female
+                    </label>
+                </div>
+                <button type="button" class="btn-primary" onclick="onClick()">Submit</button>
+                <button type="button" class="btn-primary" onclick="reset">Reset</button>
+            </form>
+          </div>
+        
       </body>
+      <script src="javascript/index.js"></script>
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+       <scrcclicklickipt src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+      <blockquote class="blockquote text-right">
+        <footer class="blockquote-footer">&Craig Olonyi</footer>
+      </blockquote>
+
+      
 </html>
