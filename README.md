@@ -1,9 +1,13 @@
 # JavaScript-1 Akan Application
 ## Craig Lawrence Olonyi
 ## Description
-*This is a detailed description of My application, including m purpose and usage.
+* With this application you can be able to calculate your age 
+and get assigned an akan name. This Akan name is derived from 
+Ghana where they name people using a prescribed formula which 
+works effectively in the application
 ## Setup/Installation Requirements
-* This is a great place to be.
+* Download the folder to your desktop.
+*Unzip it 
 * Run today and walk tomorrow.
 ## Known Bugs
 * There are some issues which had not been solved yet but coming soon,   shall be solved.
@@ -14,7 +18,7 @@
 * Bootstrap
 ## Known Bugs
 No bugs
-## Support and contact details
+## Authors info
 * CONTACTS:+254712242490; lawrence.olonyi.67@gmail.com .
 ### License
 * Copyright (c) [2020] [Crag Lawrence Olonyi]
