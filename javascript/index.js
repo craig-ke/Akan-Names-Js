@@ -40,7 +40,7 @@ function onClick(){
 	}else if(Month=="" <1 ||Month >12){
 			alert("Enter a valid month");
 
-	}else if(day=="" <1 ||day >31){
+gi	}else if(day=="" <1 ||day >31){
 			alert("Enter a valid month");
 
 	}else if(document.getElementById("male").checked==true && document.getElementById("female").checked==false){
